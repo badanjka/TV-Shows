@@ -1,0 +1,202 @@
+.navbar {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: auto;
+  justify-content: space-around; }
+  .navbar .bit {
+    color: white; }
+  .navbar .searchButton {
+    display: flex; }
+  .navbar .button {
+    color: white;
+    border-color: white; }
+    .navbar .button:hover {
+      background-color: #7b9292;
+      color: black; }
+    .navbar .button:visited {
+      background-color: #7b9292; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.menu {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: none;
+  right: 50px;
+  color: #000; }
+  .menu.visible {
+    width: 223px;
+    display: block;
+    margin-right: 240px;
+    margin-top: 5px;
+    background-color: #e2dfdf;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer; }
+    .menu.visible > p {
+      padding-left: 4px; }
+      .menu.visible > p:hover {
+        background-color: #7b9292;
+        color: white; }
+
+.oneMovie {
+  width: 33%; }
+
+.show {
+  width: 70%;
+  margin: 0 auto; }
+  .show .popularShows {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .show .shows {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; }
+    .show .shows > div {
+      width: 32%;
+      margin-left: 1%; }
+      .show .shows > div > img {
+        width: 100%;
+        height: 90%; }
+      .show .shows > div > p {
+        text-align: center;
+        font-size: 20px; }
+
+img:hover {
+  cursor: pointer;
+  opacity: 0.8; }
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; }
+
+.mainDescription {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 80%;
+  justify-content: center; }
+  .mainDescription .moviePoster {
+    width: 60% px;
+    margin: 0 auto; }
+  .mainDescription #moviePoster {
+    width: 30%; }
+    .mainDescription #moviePoster > img {
+      width: 100%; }
+  .mainDescription .seasonAndCast {
+    width: 50%;
+    text-align: left;
+    display: flex;
+    justify-content: space-evenly; }
+  .mainDescription .details {
+    margin-top: 20px;
+    text-align: justify; }
+
+footer {
+  background-color: black;
+  color: white;
+  height: 50px;
+  text-align: center;
+  padding-top: 6px;
+  width: 100%; }
+  footer > p {
+    margin-top: 8px; }
+
+@media screen and (min-device-width: 426px) and (max-device-width: 768px) {
+  .navbar {
+    width: 100%; }
+    .navbar .visible {
+      margin-right: 132px; }
+
+  .show {
+    width: 100%; }
+
+  #cast {
+    display: flex;
+    flex-direction: column; }
+
+  .mainDescription {
+    width: 86%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .mainDescription #moviePoster {
+      width: 33%; }
+    .mainDescription .seasonAndCast {
+      width: 60%;
+      text-align: left;
+      display: flex;
+      font-size: 17px;
+      justify-content: space-evenly; }
+    .mainDescription #seasons {
+      width: 48%; }
+    .mainDescription .class {
+      width: 60%; } }
+@media screen and (max-width: 425px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+    .navbar .bit {
+      text-align: center;
+      margin: 0px; }
+    .navbar .searchButton {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-right: 0px;
+      padding-bottom: 5px; }
+      .navbar .searchButton .button {
+        width: 120px; }
+      .navbar .searchButton .search {
+        width: 80%; }
+      .navbar .searchButton .visible {
+        margin-right: 54px;
+        margin-top: 36px; }
+
+  .show {
+    width: 100%; }
+
+  .popularShows {
+    font-weight: bold;
+    font-size: 25px; }
+
+  .show .shows > div {
+    width: 49%; }
+
+  .mainDescription {
+    width: 100%; }
+    .mainDescription #moviePoster {
+      width: 80%;
+      margin: 0 auto; }
+    .mainDescription .seasonAndCast {
+      width: 100%;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+    .mainDescription #cast {
+      height: 209px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; }
+    .mainDescription .details {
+      padding: 0 30px;
+      margin-top: 0px; }
+      .mainDescription .details > h3 {
+        text-align: center; } }
+
+/*# sourceMappingURL=main.css.map */

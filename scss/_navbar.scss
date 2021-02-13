@@ -1,0 +1,28 @@
+.navbar{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: auto;  
+    justify-content: space-around;
+
+    .bit{
+        // margin-left: 125px;
+        color: white;
+        // font-size: large;
+    }
+    .searchButton{
+        // margin-right: 190px;
+        display: flex;
+    }
+    .button{
+        color: white;
+        border-color: white;
+        &:hover{
+            background-color:rgb(123, 146, 146);
+            color: black;
+        }
+        &:visited{
+            background-color:rgb(123, 146, 146);
+        }
+    }
+}
